@@ -73,7 +73,7 @@ func main() {
 	//Считывание body ответа
 	body, err := io.ReadAll(response.Body)
 	if err != nil {
-		log.Fatalf("outsideApi: getInfo: %s", err)
+		log.Fatalf("%s", err)
 	}
 	//Сериализация body в структуру
 	structResponse := new(Response)
